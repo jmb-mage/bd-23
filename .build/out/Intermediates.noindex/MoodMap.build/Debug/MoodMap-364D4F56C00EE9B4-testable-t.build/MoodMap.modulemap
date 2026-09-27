@@ -1,0 +1,4 @@
+module MoodMap {
+header "MoodMap-Swift.h"
+export *
+}

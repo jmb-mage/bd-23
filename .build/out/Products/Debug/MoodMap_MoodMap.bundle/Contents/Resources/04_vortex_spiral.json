@@ -1,0 +1,24 @@
+{
+  "id": "04_vortex_spiral",
+  "name": "Vortex Spiral",
+  "description": "Archimedean cosmic spiral vortex swirling in indigo, magenta, and teal",
+  "palette": [
+    "#3A0CA3",
+    "#4361EE",
+    "#4CC9F0",
+    "#F72585",
+    "#7209B7",
+    "#3A0CA3"
+  ],
+  "pattern": {
+    "type": "spiral",
+    "wavelength": 240.0,
+    "speed": 1.4,
+    "cycleDuration": 4.2
+  },
+  "visuals": {
+    "minAlpha": 0.4,
+    "maxAlpha": 1.0,
+    "scalePulse": 0.06
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "05_bioluminescent_abyss",
+  "name": "Bioluminescent Abyss",
+  "description": "Deep sea hydrothermal flow ascending Bottom-Up with glowing cyan and deep navy",
+  "palette": [
+    "#03045E",
+    "#0077B6",
+    "#00B4D8",
+    "#90E0EF",
+    "#CAF0F8",
+    "#03045E"
+  ],
+  "pattern": {
+    "type": "bottomUp",
+    "wavelength": 300.0,
+    "speed": 0.85,
+    "cycleDuration": 5.0
+  },
+  "visuals": {
+    "minAlpha": 0.35,
+    "maxAlpha": 1.0,
+    "scalePulse": 0.05
+  }
+}

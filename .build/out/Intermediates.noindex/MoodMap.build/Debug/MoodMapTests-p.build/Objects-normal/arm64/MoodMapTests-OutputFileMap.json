@@ -1,0 +1,29 @@
+{
+  "" : {
+    "diagnostics" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests-primary.dia",
+    "emit-module-dependencies" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests-primary-emit-module.dia",
+    "pch" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests-primary.swiftdeps"
+  },
+  "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/DerivedSources/test_entry_point.swift" : {
+    "const-values" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point.swiftconstvalues",
+    "dependencies" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point.d",
+    "diagnostics" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point.dia",
+    "index-unit-output-path" : "/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point.o",
+    "llvm-bc" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point.bc",
+    "object" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point.o",
+    "swift-dependencies" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point.swiftdeps",
+    "swiftmodule" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/test_entry_point~partial.swiftmodule"
+  },
+  "/Users/jmb/Documents/bd-23/Tests/MoodMapTests/MoodMapTests.swift" : {
+    "const-values" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests.swiftconstvalues",
+    "dependencies" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests.d",
+    "diagnostics" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests.dia",
+    "index-unit-output-path" : "/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests.o",
+    "llvm-bc" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests.bc",
+    "object" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests.o",
+    "swift-dependencies" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests.swiftdeps",
+    "swiftmodule" : "/Users/jmb/Documents/bd-23/.build/out/Intermediates.noindex/MoodMap.build/Debug/MoodMapTests-p.build/Objects-normal/arm64/MoodMapTests~partial.swiftmodule"
+  }
+}

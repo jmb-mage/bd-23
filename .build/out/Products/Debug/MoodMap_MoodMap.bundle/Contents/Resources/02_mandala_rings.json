@@ -1,0 +1,45 @@
+{
+  "id": "02_mandala_rings",
+  "name": "Cosmic Mandala",
+  "description": "Fine-density concentric rings, diamond core, and 8-point starburst (8px nodes)",
+  "canvas": {
+    "width": 1024,
+    "height": 768
+  },
+  "nodeSize": 8,
+  "spacing": 1,
+  "shapes": [
+    {
+      "type": "circle",
+      "center": { "x": 512, "y": 384 },
+      "radius": 240,
+      "filled": false
+    },
+    {
+      "type": "ring",
+      "center": { "x": 512, "y": 384 },
+      "innerRadius": 180,
+      "outerRadius": 210
+    },
+    {
+      "type": "ring",
+      "center": { "x": 512, "y": 384 },
+      "innerRadius": 110,
+      "outerRadius": 140
+    },
+    {
+      "type": "star",
+      "center": { "x": 512, "y": 384 },
+      "points": 8,
+      "innerRadius": 40,
+      "outerRadius": 90
+    },
+    {
+      "type": "diamond",
+      "center": { "x": 512, "y": 384 },
+      "width": 40,
+      "height": 40,
+      "filled": true
+    }
+  ]
+}

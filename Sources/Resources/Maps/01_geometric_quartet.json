@@ -1,0 +1,46 @@
+{
+  "id": "01_geometric_quartet",
+  "name": "Geometric Quartet",
+  "description": "Square, Circle, Triangle, Rectangle, and Ring in harmony (16px nodes)",
+  "canvas": {
+    "width": 1024,
+    "height": 768
+  },
+  "nodeSize": 16,
+  "spacing": 2,
+  "shapes": [
+    {
+      "type": "circle",
+      "center": { "x": 280, "y": 500 },
+      "radius": 110,
+      "filled": true
+    },
+    {
+      "type": "square",
+      "center": { "x": 744, "y": 500 },
+      "size": 180,
+      "filled": true
+    },
+    {
+      "type": "triangle",
+      "center": { "x": 280, "y": 220 },
+      "width": 220,
+      "height": 180,
+      "direction": "up",
+      "filled": true
+    },
+    {
+      "type": "rectangle",
+      "center": { "x": 744, "y": 220 },
+      "width": 240,
+      "height": 120,
+      "filled": true
+    },
+    {
+      "type": "ring",
+      "center": { "x": 512, "y": 360 },
+      "innerRadius": 50,
+      "outerRadius": 90
+    }
+  ]
+}

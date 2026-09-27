@@ -1,0 +1,47 @@
+{
+  "id": "03_retro_arcade",
+  "name": "Retro Arcade Spacecraft",
+  "description": "Bold and chunky 32px pixel blocks forming an arcade spacecraft motif",
+  "canvas": {
+    "width": 1024,
+    "height": 768
+  },
+  "nodeSize": 32,
+  "spacing": 3,
+  "shapes": [
+    {
+      "type": "triangle",
+      "center": { "x": 512, "y": 520 },
+      "width": 380,
+      "height": 260,
+      "direction": "up",
+      "filled": true
+    },
+    {
+      "type": "rectangle",
+      "center": { "x": 512, "y": 320 },
+      "width": 460,
+      "height": 96,
+      "filled": true
+    },
+    {
+      "type": "square",
+      "center": { "x": 288, "y": 200 },
+      "size": 96,
+      "filled": true
+    },
+    {
+      "type": "square",
+      "center": { "x": 736, "y": 200 },
+      "size": 96,
+      "filled": true
+    },
+    {
+      "type": "cross",
+      "center": { "x": 512, "y": 384 },
+      "width": 128,
+      "height": 128,
+      "thickness": 32
+    }
+  ]
+}

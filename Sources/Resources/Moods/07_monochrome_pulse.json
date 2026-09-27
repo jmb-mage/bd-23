@@ -1,0 +1,24 @@
+{
+  "id": "07_monochrome_pulse",
+  "name": "Monochrome Minimalist",
+  "description": "High-contrast rhythmic radial pulse with silver, pure white, and charcoal",
+  "palette": [
+    "#111111",
+    "#444444",
+    "#888888",
+    "#CCCCCC",
+    "#FFFFFF",
+    "#111111"
+  ],
+  "pattern": {
+    "type": "radialPulse",
+    "wavelength": 200.0,
+    "speed": 1.5,
+    "cycleDuration": 2.8
+  },
+  "visuals": {
+    "minAlpha": 0.3,
+    "maxAlpha": 1.0,
+    "scalePulse": 0.12
+  }
+}

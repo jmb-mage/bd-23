@@ -1,0 +1,25 @@
+{
+  "id": "06_prismatic_horizon",
+  "name": "Prismatic Horizon",
+  "description": "45-degree diagonal refraction wave of vibrant spectral gradients",
+  "palette": [
+    "#E63946",
+    "#F1FAEE",
+    "#A8DADC",
+    "#457B9D",
+    "#1D3557",
+    "#E63946"
+  ],
+  "pattern": {
+    "type": "diagonal",
+    "wavelength": 260.0,
+    "speed": 1.0,
+    "cycleDuration": 4.0,
+    "angleDegrees": 45.0
+  },
+  "visuals": {
+    "minAlpha": 0.5,
+    "maxAlpha": 1.0,
+    "scalePulse": 0.05
+  }
+}

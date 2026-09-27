@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'MoodMap-product' in project 'MoodMap'
+➜ Explicit dependency on target 'MoodMap_MoodMap' in project 'MoodMap'
+Target 'MoodMap-product' in project 'MoodMap'
+➜ Explicit dependency on target 'MoodMap_MoodMap' in project 'MoodMap'
+Target 'MoodMap_MoodMap' in project 'MoodMap' (no dependencies)
