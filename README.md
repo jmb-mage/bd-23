@@ -46,7 +46,14 @@ A native macOS application built with Swift and SpriteKit that reads geometric s
 
 ## Quick Start & Running
 
-### 1. Build and Run via SwiftPM:
+### 1. Open with Xcode:
+Double-click or run:
+```bash
+open MoodMap.xcodeproj
+```
+Select the `MoodMap` scheme in the toolbar and hit **Run (⌘R)**! All Swift source files and JSON Map/Mood assets are organized into groups in the Project Navigator.
+
+### 2. Build and Run via Terminal (SwiftPM):
 ```bash
 # Build the project
 swift build

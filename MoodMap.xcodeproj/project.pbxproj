@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79F4C273B22944972C47A0BD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5246F0C63E3E2AB32479BD /* main.swift */; };
+		412A388838036E4D75D5C2D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C3D9D6400AF333FC4E50D /* AppDelegate.swift */; };
+		524415A5338D9DF89B0191AF /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F85EDDCD05D59FBAF36A0E /* MapModel.swift */; };
+		73233A3C561DCDFB81B7E2C8 /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD677B8DF9D960A2D7EEB7 /* MoodModel.swift */; };
+		6857C22211C524F347FB31C2 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959DA6C83E83F569C26756D /* ColorUtils.swift */; };
+		125448CE1278CD3EAB74B620 /* ShapeRasterizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66481C619507A0F9BEC7B823 /* ShapeRasterizer.swift */; };
+		C7BD104382B3504C3110D84A /* WaveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532BDE390471E17A133A5F42 /* WaveEngine.swift */; };
+		B41CE3DADE435D1F27458BBF /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7AE52BB7D795542D4FE75 /* MapManager.swift */; };
+		7D5A0BA0510A33176CB88610 /* MoodManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DB7B2FFEA1BEE429807B /* MoodManager.swift */; };
+		59F490DB0A7715BB6205AA32 /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81920EA03CAB2A2E439232 /* TransitionController.swift */; };
+		CF80396D19B4783C40071A89 /* SelfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22E463997C22B774AE8234 /* SelfTests.swift */; };
+		BEF5F49EA7F1CD13B1964B19 /* MoodMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1663DBF8BD3F44923C9CB2A5 /* MoodMapScene.swift */; };
+		FFF93BB4B68E97ACC103763A /* PixelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B21D0F89D86D49631A9C5A /* PixelNode.swift */; };
+		B021EBDE81EAC5C03B99E1C8 /* HUDOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D940AB9E9279B952F72226 /* HUDOverlay.swift */; };
+		B546DD656CBB1C94376614ED /* 01_geometric_quartet.json in Resources */ = {isa = PBXBuildFile; fileRef = 496B1EAFEEFCCD4CEA1110BA /* 01_geometric_quartet.json */; };
+		8C9722303984145F0B35E73E /* 02_mandala_rings.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EA4886FE588DF25CF9E3AE /* 02_mandala_rings.json */; };
+		4E5E538683AA26970A86B9E3 /* 03_retro_arcade.json in Resources */ = {isa = PBXBuildFile; fileRef = AC37450A04F359350B7FA702 /* 03_retro_arcade.json */; };
+		10BEE8D147CB2EF9960211C7 /* 04_dual_pyramids.json in Resources */ = {isa = PBXBuildFile; fileRef = C63A461ACA8BDB64A2A14044 /* 04_dual_pyramids.json */; };
+		5DD4F8FA1C8638921FD4567B /* 05_micro_stellar_lattice.json in Resources */ = {isa = PBXBuildFile; fileRef = 022065AA8AD40CD4C48BB5AD /* 05_micro_stellar_lattice.json */; };
+		44F7373C5747BFEBFBC3DD05 /* 01_cyberpunk_neon.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D82A7BD5955193FBA0282EF /* 01_cyberpunk_neon.json */; };
+		BAAA65058EC8F551CEFDC36A /* 02_aurora_borealis.json in Resources */ = {isa = PBXBuildFile; fileRef = 953286EDF86882A209670D4A /* 02_aurora_borealis.json */; };
+		2E95D8E14FD1DB1AE83E81CA /* 03_solar_flare.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E5578CB95E2DCB09C3F086B /* 03_solar_flare.json */; };
+		1AA452A87CEEB64E8EE74EA2 /* 04_vortex_spiral.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DA742E8E60BBCC0E47A6313 /* 04_vortex_spiral.json */; };
+		9A65FC4A61928918564DC65D /* 05_bioluminescent_abyss.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AACF27FA11D9264EB90C843 /* 05_bioluminescent_abyss.json */; };
+		6C5B2E41907F8F367ADE4762 /* 06_prismatic_horizon.json in Resources */ = {isa = PBXBuildFile; fileRef = F77D832EDDD0DB22DC450D81 /* 06_prismatic_horizon.json */; };
+		2FADA044D9B3E89F342A323A /* 07_monochrome_pulse.json in Resources */ = {isa = PBXBuildFile; fileRef = C653CFE1C6F4D5B3474102F6 /* 07_monochrome_pulse.json */; };
+		616C8BC789CF22047E0C4D47 /* 08_harmonic_matrix.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CF186AFC32097828EF4B01C /* 08_harmonic_matrix.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DFA046137E834A2CE6712484 /* MoodMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5246F0C63E3E2AB32479BD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5C5C3D9D6400AF333FC4E50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8F85EDDCD05D59FBAF36A0E /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		D4DD677B8DF9D960A2D7EEB7 /* MoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
+		8959DA6C83E83F569C26756D /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		66481C619507A0F9BEC7B823 /* ShapeRasterizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeRasterizer.swift; sourceTree = "<group>"; };
+		532BDE390471E17A133A5F42 /* WaveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveEngine.swift; sourceTree = "<group>"; };
+		A3E7AE52BB7D795542D4FE75 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		5D89DB7B2FFEA1BEE429807B /* MoodManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodManager.swift; sourceTree = "<group>"; };
+		DC81920EA03CAB2A2E439232 /* TransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
+		9F22E463997C22B774AE8234 /* SelfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTests.swift; sourceTree = "<group>"; };
+		1663DBF8BD3F44923C9CB2A5 /* MoodMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMapScene.swift; sourceTree = "<group>"; };
+		44B21D0F89D86D49631A9C5A /* PixelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelNode.swift; sourceTree = "<group>"; };
+		B3D940AB9E9279B952F72226 /* HUDOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDOverlay.swift; sourceTree = "<group>"; };
+		496B1EAFEEFCCD4CEA1110BA /* 01_geometric_quartet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 01_geometric_quartet.json; sourceTree = "<group>"; };
+		09EA4886FE588DF25CF9E3AE /* 02_mandala_rings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 02_mandala_rings.json; sourceTree = "<group>"; };
+		AC37450A04F359350B7FA702 /* 03_retro_arcade.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 03_retro_arcade.json; sourceTree = "<group>"; };
+		C63A461ACA8BDB64A2A14044 /* 04_dual_pyramids.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 04_dual_pyramids.json; sourceTree = "<group>"; };
+		022065AA8AD40CD4C48BB5AD /* 05_micro_stellar_lattice.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 05_micro_stellar_lattice.json; sourceTree = "<group>"; };
+		7D82A7BD5955193FBA0282EF /* 01_cyberpunk_neon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 01_cyberpunk_neon.json; sourceTree = "<group>"; };
+		953286EDF86882A209670D4A /* 02_aurora_borealis.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 02_aurora_borealis.json; sourceTree = "<group>"; };
+		6E5578CB95E2DCB09C3F086B /* 03_solar_flare.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 03_solar_flare.json; sourceTree = "<group>"; };
+		5DA742E8E60BBCC0E47A6313 /* 04_vortex_spiral.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 04_vortex_spiral.json; sourceTree = "<group>"; };
+		4AACF27FA11D9264EB90C843 /* 05_bioluminescent_abyss.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 05_bioluminescent_abyss.json; sourceTree = "<group>"; };
+		F77D832EDDD0DB22DC450D81 /* 06_prismatic_horizon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 06_prismatic_horizon.json; sourceTree = "<group>"; };
+		C653CFE1C6F4D5B3474102F6 /* 07_monochrome_pulse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 07_monochrome_pulse.json; sourceTree = "<group>"; };
+		5CF186AFC32097828EF4B01C /* 08_harmonic_matrix.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 08_harmonic_matrix.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8575498B939FA17D63828C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EFADA1F3487D0D2CE6DF36F = {
+			isa = PBXGroup;
+			children = (
+				0C886562886D143C6BD63A54 /* Sources */,
+				64F6309D848DC5EBE0672C8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64F6309D848DC5EBE0672C8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFA046137E834A2CE6712484 /* MoodMap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C886562886D143C6BD63A54 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ADE407D0E2AA0E66B98F3F6B /* App */,
+				EFE010F2F6D2A0D8F70269DC /* Models */,
+				4EB9E07CFD9102B750351D00 /* Engine */,
+				0DCB7C4BD790CAB3E9E931B5 /* Scene */,
+				EA52983BEC038B49E6F7AA93 /* Resources */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ADE407D0E2AA0E66B98F3F6B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF5246F0C63E3E2AB32479BD /* main.swift */,
+				5C5C3D9D6400AF333FC4E50D /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EFE010F2F6D2A0D8F70269DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8F85EDDCD05D59FBAF36A0E /* MapModel.swift */,
+				D4DD677B8DF9D960A2D7EEB7 /* MoodModel.swift */,
+				8959DA6C83E83F569C26756D /* ColorUtils.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4EB9E07CFD9102B750351D00 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				66481C619507A0F9BEC7B823 /* ShapeRasterizer.swift */,
+				532BDE390471E17A133A5F42 /* WaveEngine.swift */,
+				A3E7AE52BB7D795542D4FE75 /* MapManager.swift */,
+				5D89DB7B2FFEA1BEE429807B /* MoodManager.swift */,
+				DC81920EA03CAB2A2E439232 /* TransitionController.swift */,
+				9F22E463997C22B774AE8234 /* SelfTests.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		0DCB7C4BD790CAB3E9E931B5 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1663DBF8BD3F44923C9CB2A5 /* MoodMapScene.swift */,
+				44B21D0F89D86D49631A9C5A /* PixelNode.swift */,
+				B3D940AB9E9279B952F72226 /* HUDOverlay.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EA52983BEC038B49E6F7AA93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF29CEBB5C393BB88E68F20E /* Maps */,
+				D5EE3B39EE9BBBF755C57B39 /* Moods */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF29CEBB5C393BB88E68F20E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				496B1EAFEEFCCD4CEA1110BA /* 01_geometric_quartet.json */,
+				09EA4886FE588DF25CF9E3AE /* 02_mandala_rings.json */,
+				AC37450A04F359350B7FA702 /* 03_retro_arcade.json */,
+				C63A461ACA8BDB64A2A14044 /* 04_dual_pyramids.json */,
+				022065AA8AD40CD4C48BB5AD /* 05_micro_stellar_lattice.json */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		D5EE3B39EE9BBBF755C57B39 /* Moods */ = {
+			isa = PBXGroup;
+			children = (
+				7D82A7BD5955193FBA0282EF /* 01_cyberpunk_neon.json */,
+				953286EDF86882A209670D4A /* 02_aurora_borealis.json */,
+				6E5578CB95E2DCB09C3F086B /* 03_solar_flare.json */,
+				5DA742E8E60BBCC0E47A6313 /* 04_vortex_spiral.json */,
+				4AACF27FA11D9264EB90C843 /* 05_bioluminescent_abyss.json */,
+				F77D832EDDD0DB22DC450D81 /* 06_prismatic_horizon.json */,
+				C653CFE1C6F4D5B3474102F6 /* 07_monochrome_pulse.json */,
+				5CF186AFC32097828EF4B01C /* 08_harmonic_matrix.json */,
+			);
+			path = Moods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DE8845041F6C54E713B04CD /* MoodMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104CB38A3612F0D70934E515 /* Build configuration list for PBXNativeTarget "MoodMap" */;
+			buildPhases = (
+				1AE8350F1952B48209AEE82A /* Sources */,
+				8575498B939FA17D63828C9F /* Frameworks */,
+				1D0E82DF8E3AB92201A839F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodMap;
+			productName = MoodMap;
+			productReference = DFA046137E834A2CE6712484 /* MoodMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6A45F374D238F89AF914FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = A9533072BBDD6A913556F9BF /* Build configuration list for PBXProject "MoodMap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EFADA1F3487D0D2CE6DF36F;
+			productRefGroup = 64F6309D848DC5EBE0672C8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DE8845041F6C54E713B04CD /* MoodMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D0E82DF8E3AB92201A839F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B546DD656CBB1C94376614ED /* 01_geometric_quartet.json in Resources */,
+				8C9722303984145F0B35E73E /* 02_mandala_rings.json in Resources */,
+				4E5E538683AA26970A86B9E3 /* 03_retro_arcade.json in Resources */,
+				10BEE8D147CB2EF9960211C7 /* 04_dual_pyramids.json in Resources */,
+				5DD4F8FA1C8638921FD4567B /* 05_micro_stellar_lattice.json in Resources */,
+				44F7373C5747BFEBFBC3DD05 /* 01_cyberpunk_neon.json in Resources */,
+				BAAA65058EC8F551CEFDC36A /* 02_aurora_borealis.json in Resources */,
+				2E95D8E14FD1DB1AE83E81CA /* 03_solar_flare.json in Resources */,
+				1AA452A87CEEB64E8EE74EA2 /* 04_vortex_spiral.json in Resources */,
+				9A65FC4A61928918564DC65D /* 05_bioluminescent_abyss.json in Resources */,
+				6C5B2E41907F8F367ADE4762 /* 06_prismatic_horizon.json in Resources */,
+				2FADA044D9B3E89F342A323A /* 07_monochrome_pulse.json in Resources */,
+				616C8BC789CF22047E0C4D47 /* 08_harmonic_matrix.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AE8350F1952B48209AEE82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F4C273B22944972C47A0BD /* main.swift in Sources */,
+				412A388838036E4D75D5C2D7 /* AppDelegate.swift in Sources */,
+				524415A5338D9DF89B0191AF /* MapModel.swift in Sources */,
+				73233A3C561DCDFB81B7E2C8 /* MoodModel.swift in Sources */,
+				6857C22211C524F347FB31C2 /* ColorUtils.swift in Sources */,
+				125448CE1278CD3EAB74B620 /* ShapeRasterizer.swift in Sources */,
+				C7BD104382B3504C3110D84A /* WaveEngine.swift in Sources */,
+				B41CE3DADE435D1F27458BBF /* MapManager.swift in Sources */,
+				7D5A0BA0510A33176CB88610 /* MoodManager.swift in Sources */,
+				59F490DB0A7715BB6205AA32 /* TransitionController.swift in Sources */,
+				CF80396D19B4783C40071A89 /* SelfTests.swift in Sources */,
+				BEF5F49EA7F1CD13B1964B19 /* MoodMapScene.swift in Sources */,
+				FFF93BB4B68E97ACC103763A /* PixelNode.swift in Sources */,
+				B021EBDE81EAC5C03B99E1C8 /* HUDOverlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A9965CB9339E5664F9E23A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79DB9E787438EB9A445AD453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = "wholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		88545BD1ECB380CFBC01FE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodMap;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moodmap.MoodMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8B5041227995BE3A5FDFC85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodMap;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moodmap.MoodMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9533072BBDD6A913556F9BF /* Build configuration list for PBXProject "MoodMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9965CB9339E5664F9E23A53 /* Debug */,
+				79DB9E787438EB9A445AD453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104CB38A3612F0D70934E515 /* Build configuration list for PBXNativeTarget "MoodMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88545BD1ECB380CFBC01FE29 /* Debug */,
+				B8B5041227995BE3A5FDFC85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6A45F374D238F89AF914FFC /* Project object */;
+}
