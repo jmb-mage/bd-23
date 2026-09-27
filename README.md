@@ -1,7 +1,8 @@
 # MoodMap — Geometric Shape & Color Wave Engine (macOS Swift)
-
+### DEVELOPER TEXT HERE (REAL HOOMAN)
 This entire project is created using Gemini Antigravity prompts!  
-
+Here are the prompts I used [ai-prompts.md](ai-prompts.md)
+### AI GENERATED TEXT BEGINS
 A native macOS application built with Swift and SpriteKit that reads geometric shapes from JSON data files, rasterizes them into discrete square pixel nodes (from $4\times 4$ up to $32\times 32$ pixels), and animates them using dynamic color wave patterns loaded from JSON mood files.
 
 ---
