@@ -40,6 +40,7 @@ A native macOS application built with Swift and SpriteKit that reads geometric s
 - **Interactive Keyboard Controls**:
   - `←` / `→` (Left / Right Arrow): Cycle between Map files with smooth staggered wave dissolve/assembly transitions.
   - `↑` / `↓` (Up / Down Arrow): Cycle between Mood files with continuous color cross-fading.
+  - `+` / `-` (or `=` / `-`): Dynamically scale node size up or down in real time (from 4px to 64px).
   - `Space`: Pause / Resume animation.
   - `R`: Randomize map & mood combination.
   - `H`: Toggle the diagnostic HUD overlay.

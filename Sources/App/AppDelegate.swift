@@ -74,6 +74,12 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
         viewMenu.addItem(randomizeItem)
 
         viewMenu.addItem(NSMenuItem.separator())
+        let increaseNodeItem = NSMenuItem(title: "Increase Node Size", action: #selector(increaseNodeSizeAction), keyEquivalent: "+")
+        let decreaseNodeItem = NSMenuItem(title: "Decrease Node Size", action: #selector(decreaseNodeSizeAction), keyEquivalent: "-")
+        viewMenu.addItem(increaseNodeItem)
+        viewMenu.addItem(decreaseNodeItem)
+
+        viewMenu.addItem(NSMenuItem.separator())
         let fullScreenItem = NSMenuItem(title: "Toggle Full Screen", action: #selector(NSWindow.toggleFullScreen(_:)), keyEquivalent: "f")
         fullScreenItem.keyEquivalentModifierMask = [.control, .command]
         viewMenu.addItem(fullScreenItem)
@@ -124,6 +130,14 @@ public final class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc private func randomizeAction() {
         scene?.randomize()
+    }
+
+    @objc private func increaseNodeSizeAction() {
+        scene?.increaseNodeSize()
+    }
+
+    @objc private func decreaseNodeSizeAction() {
+        scene?.decreaseNodeSize()
     }
 
     public func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {

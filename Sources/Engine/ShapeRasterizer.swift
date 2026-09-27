@@ -45,8 +45,8 @@ public final class ShapeRasterizer: Sendable {
     public init() {}
 
     /// Rasterizes all shapes in a MapModel into an array of RasterNodeData.
-    public func rasterize(map: MapModel) -> [RasterNodeData] {
-        let nodeSize = max(map.nodeSize, 2.0)
+    public func rasterize(map: MapModel, nodeSizeOverride: CGFloat? = nil) -> [RasterNodeData] {
+        let nodeSize = max(nodeSizeOverride ?? map.nodeSize, 2.0)
         let spacing = max(map.spacing ?? 1.0, 0.0)
         let step = nodeSize + spacing
         let canvas = map.canvas ?? CanvasSize(width: 1024, height: 768)

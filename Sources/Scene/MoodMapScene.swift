@@ -21,6 +21,9 @@ public final class MoodMapScene: SKScene {
     private var hudOverlay: HUDOverlay?
 
     // MARK: - Active State
+    public private(set) var activeNodeSize: CGFloat? = nil
+    public var currentNodeSize: CGFloat { activeNodeSize ?? mapManager.currentMap.nodeSize }
+    private let availableNodeSizes: [CGFloat] = [4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 56, 64]
     private var activeNodes: [PixelNode] = []
     private var isTransitioningMap: Bool = false
     private var isAnimationPaused: Bool = false
@@ -96,7 +99,7 @@ public final class MoodMapScene: SKScene {
 
     public func loadCurrentMap(animated: Bool = true) {
         let currentMap = mapManager.currentMap
-        let nodeDataList = rasterizer.rasterize(map: currentMap)
+        let nodeDataList = rasterizer.rasterize(map: currentMap, nodeSizeOverride: currentNodeSize)
         centerWorldContainer()
 
         if !animated || activeNodes.isEmpty {
@@ -161,12 +164,14 @@ public final class MoodMapScene: SKScene {
 
     public func nextMap() {
         guard !isTransitioningMap else { return }
+        activeNodeSize = nil // Reset to the map's configured node size
         mapManager.next()
         loadCurrentMap(animated: true)
     }
 
     public func previousMap() {
         guard !isTransitioningMap else { return }
+        activeNodeSize = nil // Reset to the map's configured node size
         mapManager.previous()
         loadCurrentMap(animated: true)
     }
@@ -183,6 +188,47 @@ public final class MoodMapScene: SKScene {
         updateHUD()
     }
 
+    // MARK: - Dynamic Node Sizing
+
+    public func increaseNodeSize() {
+        let current = currentNodeSize
+        if let next = availableNodeSizes.first(where: { $0 > current }) {
+            setNodeSize(next)
+        } else if current < 64 {
+            setNodeSize(min(current + 4, 64))
+        }
+    }
+
+    public func decreaseNodeSize() {
+        let current = currentNodeSize
+        if let prev = availableNodeSizes.last(where: { $0 < current }) {
+            setNodeSize(prev)
+        } else if current > 4 {
+            setNodeSize(max(current - 2, 4))
+        }
+    }
+
+    public func setNodeSize(_ newSize: CGFloat) {
+        let clamped = min(max(newSize, 4.0), 64.0)
+        self.activeNodeSize = clamped
+
+        let currentMap = mapManager.currentMap
+        let nodeDataList = rasterizer.rasterize(map: currentMap, nodeSizeOverride: clamped)
+
+        // Rapid rebuild with smooth entry pop
+        activeNodes.forEach { $0.sprite.removeFromParent() }
+        activeNodes.removeAll(keepingCapacity: true)
+
+        for data in nodeDataList {
+            let pixel = PixelNode(data: data)
+            nodeContainer.addChild(pixel.sprite)
+            pixel.animateIn(delay: 0.0, duration: 0.15)
+            activeNodes.append(pixel)
+        }
+
+        updateHUD()
+    }
+
     public func togglePause() {
         isAnimationPaused.toggle()
     }
@@ -194,6 +240,7 @@ public final class MoodMapScene: SKScene {
     public func randomize() {
         let randMap = Int.random(in: 0..<max(mapManager.count, 1))
         let randMood = Int.random(in: 0..<max(moodManager.count, 1))
+        activeNodeSize = nil
         mapManager.select(index: randMap)
         let newMood = moodManager.select(index: randMood)
         loadCurrentMap(animated: true)
@@ -208,6 +255,7 @@ public final class MoodMapScene: SKScene {
             mapIndex: mapManager.currentIndex,
             totalMaps: mapManager.count,
             map: currentMap,
+            activeNodeSize: currentNodeSize,
             nodeCount: activeNodes.count,
             moodIndex: moodManager.currentIndex,
             totalMoods: moodManager.count,
@@ -256,6 +304,10 @@ public final class MoodMapScene: SKScene {
             previousMood()
         case 126: // Up Arrow -> Next Mood
             nextMood()
+        case 24, 69: // '+' / '=' or Keypad '+' -> Increase Node Size
+            increaseNodeSize()
+        case 27, 78: // '-' / '_' or Keypad '-' -> Decrease Node Size
+            decreaseNodeSize()
         case 49:  // Spacebar -> Toggle Pause
             togglePause()
         case 4:   // 'H' -> Toggle HUD
@@ -263,6 +315,15 @@ public final class MoodMapScene: SKScene {
         case 15:  // 'R' -> Randomize
             randomize()
         default:
+            if let chars = event.charactersIgnoringModifiers {
+                if chars.contains("+") || chars.contains("=") {
+                    increaseNodeSize()
+                    return
+                } else if chars.contains("-") || chars.contains("_") {
+                    decreaseNodeSize()
+                    return
+                }
+            }
             super.keyDown(with: event)
         }
     }

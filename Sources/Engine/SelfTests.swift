@@ -95,6 +95,10 @@ public struct SelfTests {
         let microNodes = rasterizer.rasterize(map: microMap)
         assertTest(microNodes.first?.size.width == 4 && microNodes.count > chunkyNodes.count, "Micro 4x4 pixel node high density verified")
 
+        // Test dynamic node size override
+        let overrideNodes = rasterizer.rasterize(map: chunkyMap, nodeSizeOverride: 8)
+        assertTest(overrideNodes.first?.size.width == 8, "Dynamic node size override to 8px successfully rasterized")
+
         // Test 5: Wave Engine & Pattern Propagation
         print("\n[4] Testing Wave Animation Engine & Patterns...")
         let mood = MoodModel(

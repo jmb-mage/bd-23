@@ -57,12 +57,12 @@ public final class HUDOverlay {
 
         // Right Column: Keyboard Shortcuts
         controlsLabel = SKLabelNode(fontNamed: "SFProText-Semibold")
-        controlsLabel.fontSize = 12
+        controlsLabel.fontSize = 11
         controlsLabel.fontColor = SKColor(red: 0.3, green: 0.85, blue: 1.0, alpha: 0.95)
         controlsLabel.horizontalAlignmentMode = .right
-        controlsLabel.numberOfLines = 3
-        controlsLabel.text = "← / → : Change Map\n↑ / ↓ : Change Mood\nSpace : Pause | H : Hide"
-        controlsLabel.position = CGPoint(x: size.width - 40, y: size.height - 85)
+        controlsLabel.numberOfLines = 4
+        controlsLabel.text = "← / → : Change Map\n↑ / ↓ : Change Mood\n+ / - : Node Size\nSpace : Pause | H : Hide"
+        controlsLabel.position = CGPoint(x: size.width - 40, y: size.height - 90)
         rootNode.addChild(controlsLabel)
     }
 
@@ -77,7 +77,7 @@ public final class HUDOverlay {
         moodTitleLabel.position = CGPoint(x: size.width * 0.40, y: size.height - 50)
         moodDetailLabel.position = CGPoint(x: size.width * 0.40, y: size.height - 72)
 
-        controlsLabel.position = CGPoint(x: size.width - 40, y: size.height - 80)
+        controlsLabel.position = CGPoint(x: size.width - 40, y: size.height - 85)
     }
 
     /// Update HUD content strings
@@ -85,13 +85,14 @@ public final class HUDOverlay {
         mapIndex: Int,
         totalMaps: Int,
         map: MapModel,
+        activeNodeSize: CGFloat,
         nodeCount: Int,
         moodIndex: Int,
         totalMoods: Int,
         mood: MoodModel
     ) {
         mapTitleLabel.text = "Map [\(mapIndex + 1)/\(totalMaps)]: \(map.name)"
-        let nodeSizeStr = String(format: "%.0f×%.0f px", map.nodeSize, map.nodeSize)
+        let nodeSizeStr = String(format: "%.0f×%.0f px", activeNodeSize, activeNodeSize)
         mapDetailLabel.text = "Nodes: \(nodeCount) | Size: \(nodeSizeStr) | Shapes: \(map.shapes.count)"
 
         moodTitleLabel.text = "Mood [\(moodIndex + 1)/\(totalMoods)]: \(mood.name)"
