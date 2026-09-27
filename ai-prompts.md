@@ -10,3 +10,7 @@ Here is a list of the prompts given to the AI to make this project.
 ## TWO
 
 add an xcode project file that will load all the files
+
+## THREE
+
+add to the program the ability to dynamically change the node size by pressing the + or - button
